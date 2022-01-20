@@ -6,16 +6,9 @@
 }
 
 .counts div {
-	padding: 8px;
+	padding: 3px;
 }
 
 .counts span {
 	float: right;
-}
-
-.countRows {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	padding-top: 0px;
 }

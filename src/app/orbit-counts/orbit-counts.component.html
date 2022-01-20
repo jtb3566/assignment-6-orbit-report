@@ -3,10 +3,7 @@
 	<div>
 		Total: <span class="counts-total">{{satellites.length}}</span>
 	</div>
-	<hr>
 	<div *ngFor = "let type of satteliteTypes">
-		<div *ngIf="countByType(type) > 0" class = "countRows">{{type}}: <span class="counts-total">{{countByType(type)}}</span> <br> </div>
+		<div *ngIf="countByType(type) > 0">{{type}}: <span class="counts-total">{{countByType(type)}}</span> <br> </div>
 	</div>
 </div>
-
-<!--TODO fix spacing on count rows-->
