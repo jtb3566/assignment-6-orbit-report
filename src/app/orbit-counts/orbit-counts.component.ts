@@ -10,6 +10,9 @@ export class OrbitCountsComponent implements OnInit {
 
 	@Input() satellites: Satellite[];
 
+  //TODO need to make this dynamic
+  satteliteTypes: string [] = ['Space Debris', 'Communication', 'Probe', 'Positioning', 'Space Station', 'Telescope'];
+
   constructor() { }
 
   ngOnInit() {
@@ -27,5 +30,11 @@ export class OrbitCountsComponent implements OnInit {
 	return count;
  }
 
-
+ 	countVisibility(count: number):string {
+		if (count === 0) {
+			return 'hidden'
+		} else {
+			return 'visible'
+		}
+	 }
 }
